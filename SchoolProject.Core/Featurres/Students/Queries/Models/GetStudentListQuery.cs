@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace SchoolProject.Core.Featurres.Students.Queries.Models
 {
-    public class GetStudentListQuery : IRequest<Response<List<StudentResponse>>>
+    public class GetStudentListQuery : IRequest<Response<List<GetStudentListResponse>>>
     {
 
     }

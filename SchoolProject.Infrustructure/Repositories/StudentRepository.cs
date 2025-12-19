@@ -21,9 +21,14 @@ namespace SchoolProject.Infrustructure.Repositories
         }
         #endregion
         #region Methods
-        public Task<List<Student>> GetAllStudentsListAsync()
+        public async Task<List<Student>> GetAllStudentsListAsync()
         {   
-            return _dbContext.students.Include(s => s.Department).ToListAsync();
+            return await _dbContext.students.Include(s => s.Department).ToListAsync();
+        }
+
+        public async Task<Student?> GetStudentByIdAsync(int id)
+        {
+            return await _students.FindAsync(id);
         }
         #endregion
 

@@ -11,7 +11,8 @@ namespace SchoolProject.Core.Mapping.Students
     {
         public StudentProfile() 
         {
-            ConfigureStudentResponseMapping();
+            ConfigureGetStudentListResponseMapping();
+            ConfigureGetStudentResponseMapping();
         }
     }
 }
